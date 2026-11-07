@@ -748,10 +748,13 @@
 
   .contact-map-placeholder span { font-size: 48px; display: block; margin-bottom: 12px; }
 
-  /* ─── VISIBLE TEXT SECTION ─── */
-  .seo-visible { background: var(--ice-white); padding: 56px 5%; max-width: 1000px; margin: 0 auto; }
-  .seo-visible h2 { font-family: 'Merriweather', serif; font-size: clamp(20px, 3vw, 28px); line-height: 1.3; margin-bottom: 18px; }
-  .seo-visible p { font-size: 14px; line-height: 1.75; color: #2B4A5F; margin-bottom: 14px; }
+  /* ─── SEARCH TEXT (collapsed) ─── */
+  .seo-more { max-width: 1000px; margin: 0 auto; padding: 18px 5%; text-align: center; }
+  .seo-more summary { cursor: pointer; font-size: 11px; color: #8AA5B6; list-style: none; letter-spacing: 0.03em; }
+  .seo-more summary::-webkit-details-marker { display: none; }
+  .seo-more[open] { text-align: left; padding-top: 32px; padding-bottom: 32px; }
+  .seo-more[open] summary { font-size: 13px; font-weight: 500; color: var(--navy); margin-bottom: 14px; }
+  .seo-more p { font-size: 13px; line-height: 1.75; color: #2B4A5F; margin-bottom: 12px; }
 
   /* ─── FOOTER ─── */
   footer {
@@ -883,13 +886,13 @@
     </div>
   </section>
 
-  <!-- ABOUT / SEARCH TEXT (visible, trilingual) -->
-  <section class="seo-visible">
-    <h2>Supplier Seafood &amp; Frozen Food Surabaya <span class="zh">· 泗水海鲜冷冻食品供应商</span></h2>
+  <!-- SEARCH TEXT (collapsed by default) -->
+  <details class="seo-more">
+    <summary>Supplier Seafood &amp; Frozen Food Surabaya <span class="zh">· 泗水海鲜冷冻食品供应商</span></summary>
     <p lang="id">Lima Samudra adalah supplier dan distributor seafood serta frozen food di Surabaya untuk hotel, restoran, dan katering (HoReCa) di Indonesia. Kami menyediakan haisom / haesom (teripang), hisit (sirip hiu), hipio (gelembung ikan), daging kepiting, scallop, abalon, ubur-ubur, cumi, udang, ikan kakap, sarang burung walet, jamur kering, serta daging sapi dan jeroan beku. Hubungi kami via WhatsApp +62 851-9006-1790 atau WeChat christofsusanto untuk harga dan ketersediaan.</p>
     <p lang="en">Lima Samudra is a seafood and frozen food supplier and distributor in Surabaya serving hotels, restaurants and catering (HoReCa) across Indonesia. We supply haisom (sea cucumber), hisit (shark fin), hipio (fish maw), crab meat, scallop, abalone, jellyfish, squid, shrimp, snapper, bird's nest, dried mushrooms, plus frozen beef and offal. Contact us on WhatsApp +62 851-9006-1790 or WeChat christofsusanto for prices and availability.</p>
     <p lang="zh-Hans" class="zh">Lima Samudra 是位于印度尼西亚泗水的海鲜及冷冻食品供应商与经销商，服务全国酒店、餐厅及餐饮企业（HoReCa）。我们供应海参（haisom）、鱼翅（hisit）、鱼肚／花胶（hipio）、蟹肉、扇贝、鲍鱼、海蜇、鱿鱼、虾、鲷鱼、燕窝、干菌菇，以及冷冻牛肉和牛杂。价格及库存请通过 WhatsApp +62 851-9006-1790 或微信 christofsusanto 咨询。</p>
-  </section>
+  </details>
 </div>
 
 <!-- ══════════════ CATALOGUE ══════════════ -->
